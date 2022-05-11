@@ -14,7 +14,7 @@ export const Container = styled.main`
         width: 12,75rem;
         height: 12.75rem;
         margin-top: 50px;
-        margin-left: 40%;
+        margin-left: 42%;
         border: var(--green);
         transform: scale(1);
 	    animation: pulse 2s infinite;

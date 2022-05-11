@@ -2,12 +2,32 @@ import React from 'react';
 import { Container } from './styles';
 
 import imgInfo from '../../assets/img/icon.svg'
+import imgGames from '../../assets/img/games-icon.svg'
+import imgMusic from '../../assets/img/music-icon.svg'
+import imgBoxe from '../../assets/img/boxe-icon.svg'
+import imgTravel from '../../assets/img/travel-icon.svg'
+import imgReact from '../../assets/img/react-icon.svg'
+import imgCSS from '../../assets/img/css-icon.svg'
+import imgJS from '../../assets/img/js-icon.svg'
+import imgSQL from '../../assets/img/sql-icon.svg'
+import imgDownload from '../../assets/img/download-icon.svg'
 
-export default function AboutMe() {
+
+import Button from '../Button/Button';
+import SquareButton from '../SquareButton/SquareButton';
+
+
+export default function AboutMe(props) {
   return (
     <>
       <Container>
-        <div className="card"><img className='infoIcon' src={imgInfo} ></img></div>
+        
+        <div className='card'>
+          <SquareButton
+          message=''
+          icon={imgInfo}/>
+        </div>
+      
         <h2>Sobre Mim</h2>
         <div className="linha-1"></div>
         <div className="linha-2"></div>
@@ -40,10 +60,11 @@ export default function AboutMe() {
               <tr>
                 <td className='title'>Site</td>
                 <td className='personal-details-value'>www.algumsite.com.br</td>
-              </tr>            <tr>
-                <td className='title'>Status</td>
-                <td className='personal-details-value'>Disponivel</td>
-              </tr>
+              </tr>            
+              <div className='teste'>
+                <span className='title'>Status</span>
+                <span className='personal-details-status'>Disponivel</span>
+              </div>
             </div>
 
           </div>
@@ -51,40 +72,30 @@ export default function AboutMe() {
           <div >
             <h3>Interesses Pessoais</h3>
               <div className='buttons-interest'>
-                <tr className='button-interest'>
-                  <td></td>
-                </tr>
-                <tr className='button-interest'>
-                  <td></td>
-                </tr>
-                <tr className='button-interest'>
-                  <td></td>
-                </tr>
-                <tr className='button-interest'>
-                  <td></td>
-                </tr>
-              </div>
+                <SquareButton message='Games' icon={imgGames}/>
+                <SquareButton className='margem' message='Boxe' icon={imgBoxe}/>
+                <SquareButton message='Music' icon={imgMusic}/>
+                <SquareButton message='Travel' icon={imgTravel}/>
+             </div>
 
+              <h3 className='title-skills'>Skills</h3>
               <div className='buttons-interest'>
-                <tr className='button-interest'>
-                  <td></td>
-                </tr>
-                <tr className='button-interest'>
-                  <td></td>
-                </tr>
-                <tr className='button-interest'>
-                  <td></td>
-                </tr>
-                <tr className='button-interest'>
-                  <td></td>
-                </tr>
+           
+
+                <SquareButton message='React' icon={imgReact}/>
+                <SquareButton message='JS' icon={imgJS}/>
+                <SquareButton message='css' icon={imgCSS}/>
+                <SquareButton message='SQL' icon={imgSQL}/>
+              
               </div>
           </div>
 
 
         </div>
 
-        <button></button>
+      <Button title="teste" icon={imgDownload}
+      />
+
       </Container>
 
     </>

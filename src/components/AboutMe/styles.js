@@ -5,60 +5,16 @@ export const Container = styled.main`
     background-color: var(--background);
     width: 940px;
     margin: 0 auto;
+    padding-bottom: 3rem;
 
     .card {
-        height: 5rem;
-        width: 5rem;
-        
-        border-radius: 0.55rem;
-        background-color: var(--background-cards);
-        
-        margin: 0 auto;
-        margin-top: 3.12rem;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-        
-
-        .infoIcon{
-            margin-top: 1rem;
-            margin-left: 1rem;
-        }
-
-  
-    }
-    h2{
-        color: var(--white);
-        font-size: 2.25rem;
-        margin-top: 1.5rem;
-        text-align: center;
-    }
-    .linha-1{
-        width: 8rem;
-        border: 1px solid var(--green);
-        margin: 0 auto;
-        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
 
     }
-
-    .linha-2{
-        width: 5rem;
-        border: 1px solid var(--green);
-        margin: 0 auto;
-        margin-top: .6rem;
-
-    }
-    .destaque {
-        color:var(--green);
-
-    }
-    .resume{
-        margin-top: 3.4rem;
-        color: var(--white);
-        line-height:18.77px;
-    }
-
-
-
-
 
     .title{
         color: var(--green);
@@ -72,10 +28,31 @@ export const Container = styled.main`
         color: var(--white)
     }
 
+    .teste {
+        margin-top: 5rem;
+    }
+
+    .personal-details-status{
+        background-color:var(--green);
+        color: var(--white);
+        font-weight: bold;
+        text-align: center;
+        border-radius: 20px;
+        margin-left: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+ 
+    }
 
 
     h3{
         margin-top: 5rem;
+        color: var(--white);
+        
+    }
+
+    .title-skills{
+        margin-top: 1rem;
         color: var(--white);
         
     }
@@ -102,9 +79,18 @@ export const Container = styled.main`
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
+
     .buttons-interest:nth-child(odd){
         margin-top: 1.5rem;
         
+    }
+    
+    .icons{
+        margin-top: 50%;
+        margin-left: 50%;
+        margin-top: 20%;
+        width: 40px;
+        height: 40px;
     }
 
     

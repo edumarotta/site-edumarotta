@@ -56,4 +56,39 @@ export const GlobalStyle = createGlobalStyle`
         cursor: not-allowed;
     }
 
+    .linha-1{
+        width: 8rem;
+        border: 1px solid var(--green);
+        margin: 0 auto;
+        margin-top: 1rem;
+
+    }
+
+    .linha-2{
+        width: 5rem;
+        border: 1px solid var(--green);
+        margin: 0 auto;
+        margin-top: .6rem;
+
+    }
+
+    .destaque {
+        color:var(--green);
+
+    }
+    .resume{
+        margin-top: 3.4rem;
+        color: var(--white);
+        line-height:18.77px;
+    }
+
+    h2{
+        color: var(--white);
+        font-size: 2.25rem;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+
+
 `

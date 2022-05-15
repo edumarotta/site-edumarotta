@@ -15,7 +15,7 @@ export const Teste = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-right: 20px;
+   
 
     color: white;
     text-transform: uppercase;

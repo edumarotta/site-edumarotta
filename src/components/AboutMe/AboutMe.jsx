@@ -73,9 +73,9 @@ export default function AboutMe(props) {
             <h3>Interesses Pessoais</h3>
               <div className='buttons-interest'>
                 <SquareButton message='Games' icon={imgGames}/>
-                <SquareButton className='margem' message='Boxe' icon={imgBoxe}/>
-                <SquareButton message='Music' icon={imgMusic}/>
-                <SquareButton message='Travel' icon={imgTravel}/>
+                <div className='margem'> <SquareButton message='Boxe' icon={imgBoxe}/></div>
+                <div className='margem'><SquareButton message='Music' icon={imgMusic}/></div>
+                <div className='margem'><SquareButton message='Travel' icon={imgTravel}/></div>
              </div>
 
               <h3 className='title-skills'>Skills</h3>

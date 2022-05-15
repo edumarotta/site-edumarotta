@@ -62,6 +62,10 @@ export const Container = styled.main`
         justify-content: space-between;
     }
 
+    .margem{
+        margin-left: 20px;
+    }
+
     .buttons-interest {
         display: flex;
         justify-content: space-between;
